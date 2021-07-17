@@ -1,11 +1,3 @@
-import { visitBaseURL } from '../../fixtures/test-base';
-import LandingPage  from '../../page-objects/landingPage';
-import CartPage  from '../../page-objects/cartPage';
-import SignupPopup  from '../../page-objects/signupPopup';
-import LoginPopup  from '../../page-objects/loginPopup';
-import ItemPage  from '../../page-objects/itemPage';
-import { CREDENTIALS } from '../../fixtures/constants';
-
 
 
 describe('test suite for demoblaze site', () => {
