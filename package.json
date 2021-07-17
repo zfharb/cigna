@@ -1,7 +1,7 @@
 {
-  "name": "vineti",
+  "name": "cigna",
   "version": "1.0.0",
-  "description": "vineti interview",
+  "description": "cigna interview",
   "main": "index.js",
   "dependencies": {
     "cypress": "^7.4.0"
