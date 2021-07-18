@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "open:cypress": "./node_modules/.bin/cypress open",
-    "run:cypress": "node_modules\\.bin\\cypress run --headed --spec cypress/integration/*.js"
+    "run:cypress": "node_modules\\.bin\\cypress run --headed --spec 'cypress/integration/**/*.spec.js'"
   },
   "repository": {
     "type": "git",

@@ -1,11 +1,8 @@
 import Page from './page';
-import SignupPopup  from '../page-objects/signupPopup';
 
 const SELECTORS = {
     USERNAME_BOX: '#loginusername',
-
     PASSWORD_BOX: "#loginpassword",
-
     LOGIN_BUTTON: "Log in"
 };
 

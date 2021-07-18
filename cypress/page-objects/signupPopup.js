@@ -29,6 +29,8 @@ class SignupPopup extends Page {
     clickSignupButton() {
         cy.get(`button:contains("${SELECTORS.SIGNUP_BUTTON}")`, { timeout: 10000 }).click({force: true});
     }
+
+    
 }
 
 export default new SignupPopup();

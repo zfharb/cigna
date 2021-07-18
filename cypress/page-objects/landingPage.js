@@ -1,11 +1,7 @@
 import Page from './page';
-import SignupPopup  from '../page-objects/signupPopup';
-import LoginPopup  from '../page-objects/loginPopup';
-import ItemPage  from '../page-objects/itemPage';
 
 const SELECTORS = {
-    SIGN_UP_BUTTON: '#signin2',
-    LOG_IN_BUTTON: '#login2'
+    PHONE_LINK: 'Phones',
 };
 
 class LandingPage extends Page {
@@ -13,21 +9,9 @@ class LandingPage extends Page {
         super(SELECTORS);
     }
 
-    clickSignUpButton() {
-        cy.get(SELECTORS.SIGN_UP_BUTTON, { timeout: 10000 }).click({force: true});
-        return SignupPopup;
+    clickPhoneLink() {
+        cy.get(`a:contains("${SELECTORS.PHONE_LINK}")`, { timeout: 10000 }).click({force: true});
     }
-
-    clickLoginButton() {
-        cy.get(SELECTORS.LOG_IN_BUTTON, { timeout: 10000 }).click({force: true});
-        return LoginPopup;
-    }
-
-    clickItemByName(itemName) {
-        cy.get(`a:contains("${itemName}")`, { timeout: 10000 }).click({force: true});
-        return ItemPage;
-    }
-
     
 }
 

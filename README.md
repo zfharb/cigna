@@ -38,6 +38,13 @@ Project Run:<br>
 
    npm run open:cypress
    
+<h1>
+CI pipeline:<br>
+</h1>
+
+This project is setup with GH actions. One each push from local repo, a new workflow run will start to run all test cases. To view all runs, go to below link:<br>
+
+   https://github.com/zfharb/cigna/actions<br>
 
 <h1>
 Notes:<br>
@@ -45,4 +52,4 @@ Notes:<br>
 
 * This simple framework uses page object model. Some sites recommend not using this model with cypress but the POM was used here for the purpose of showing how one would be applied when doing automation. 
 
-* More folders like helpers and utilities would be added in a more complex framework. There was no need to use any here. 
+* More folders like helpers and utilities would be added in a more complex framework. There was no need to use any here.
