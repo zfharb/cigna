@@ -1,5 +1,5 @@
 
 export const CREDENTIALS = {
     password: '123',
-    username: 'vineti' + Date.now()
+    username: 'cigna' + Date.now()
 }
