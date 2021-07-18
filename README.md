@@ -1,7 +1,7 @@
 
 <h1>
 To run the mocha tests: 
-
+</h1>
 1. clone the repo to the local directory. 
 
 2. open cmd.exe on window or terminal on mac and run these commands: 
