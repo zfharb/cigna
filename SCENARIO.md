@@ -1,4 +1,4 @@
-Feature: list all items available
+Feature: list all items available\n
 Type: GET api call
 Test: make GET call to view all phones availabe for purchase. This is would make a good smoke test.
 
