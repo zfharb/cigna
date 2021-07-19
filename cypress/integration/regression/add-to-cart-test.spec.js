@@ -1,6 +1,6 @@
 import { visitBaseURL } from '../../fixtures/test-base';
 import LandingPage  from '../../page-objects/landingPage';
-import PhonesgPage  from '../../page-objects/PhonesPage';
+import PhonesgPage  from '../../page-objects/phonesPage';
 import CartPage  from '../../page-objects/cartPage';
 import Header  from '../../page-objects/header';
 import ItemPage  from '../../page-objects/itemPage';
