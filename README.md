@@ -39,6 +39,14 @@ Project Run:<br>
    npm run open:cypress
    
 <h1>
+Report Run:<br>
+</h1>
+
+* For this project, mochawesome reporter. to generate the report and open the report html file:
+
+   npm run create:html:report 
+
+<h1>
 CI pipeline:<br>
 </h1>
 

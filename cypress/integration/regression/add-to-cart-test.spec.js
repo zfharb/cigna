@@ -5,8 +5,6 @@ import CartPage  from '../../page-objects/cartPage';
 import Header  from '../../page-objects/header';
 import ItemPage  from '../../page-objects/itemPage';
 
-
-
 describe('test suite for demoblaze site', () => {
       it('it should add samsung galaxy s6 to cart', () => {
         visitBaseURL();

@@ -1,8 +1,3 @@
-// import Page from './page';
-import ContactPopup  from '../page-objects/contactPopup';
-import AboutusPopup  from '../page-objects/aboutusPopup';
-
-import CartPage  from '../page-objects/cartPage';
 
 const SELECTORS = {
     NAV_BAR: "#navbarExample",
@@ -11,7 +6,8 @@ const SELECTORS = {
     CART_LINK: "Cart",
     SIGN_UP_LINK: '#signin2',
     LOG_IN_LINK: '#login2',
-    LOG_IN_USER_NAME: '#nameofuser'
+    LOG_IN_USER_NAME: '#nameofuser',
+    LOGO: '#nava'
     
 };
 
@@ -43,6 +39,9 @@ class Header {
         cy.get(SELECTORS.LOG_IN_USER_NAME, { timeout: 10000 }).should('have.text',`Welcome ${username}`);
     }
 
+    verifyPageLogo() {
+        cy.get(SELECTORS.LOGO, { timeout: 10000 }).should('have.attr', 'href');
+    }
 }
 
 export default new Header();

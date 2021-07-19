@@ -1,7 +1,7 @@
 import Page from './page';
-import ItemPage  from '../page-objects/itemPage';
 
 const SELECTORS = {
+    CARDS_TABLE: '#tbodyid'
 };
 
 class PhonesgPage extends Page {
@@ -10,7 +10,7 @@ class PhonesgPage extends Page {
     }
 
     clickItemByName(itemName) {
-        cy.get(`a:contains("${itemName}")`, { timeout: 10000 }).click({force: true});
+        cy.get(SELECTORS.CARDS_TABLE).get(`a:contains("${itemName}")`, { timeout: 10000 }, { multiple: false }).click({force: true});
     }    
 }
 

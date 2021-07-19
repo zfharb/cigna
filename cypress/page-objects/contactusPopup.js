@@ -5,11 +5,9 @@ const SELECTORS = {
     ENTER_NAME_BOX: '#recipient-name',
     ENTER_MESSAGE_BOX: '#message-text',
     SEND_MESSAGE_BUTTON: 'Send message'
-    
-
 };
 
-class Contact extends Page {
+class ContactusPopup extends Page {
     constructor() {
         super(SELECTORS);
     }
@@ -39,4 +37,4 @@ class Contact extends Page {
    
 }
 
-export default new Contact();
+export default new ContactusPopup();

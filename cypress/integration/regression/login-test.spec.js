@@ -4,13 +4,11 @@ import SignupPopup  from '../../page-objects/signupPopup';
 import LoginPopup  from '../../page-objects/loginPopup';
 import { CREDENTIALS } from '../../fixtures/constants';
 
-
 describe('test suite for demoblaze site', () => {
     let username = CREDENTIALS.username;
     let password = CREDENTIALS.password;
 
       it('it should add samsung galaxy s6 to cart', () => {
-        
         visitBaseURL();
         Header.clickSignupLink()
         SignupPopup.fillUsernameBox(username)

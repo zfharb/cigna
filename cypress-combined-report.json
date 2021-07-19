@@ -1,0 +1,587 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 10,
+    "passes": 10,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-19T00:46:03.989Z",
+    "end": "2021-07-19T00:47:25.727Z",
+    "duration": 33286,
+    "testsRegistered": 10,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "46fbd849-2d6e-45ed-ae02-f51012fa4625",
+      "title": "",
+      "fullFile": "cypress/integration/api-tests/GET-view-all-items-test.spec.js",
+      "file": "cypress/integration/api-tests/GET-view-all-items-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "448af141-e2cd-4b97-899f-f8be96ea1c08",
+          "title": "test suite to validate that all items can be viewed",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should get all items",
+              "fullTitle": "test suite to validate that all items can be viewed it should get all items",
+              "timedOut": null,
+              "duration": 239,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'get',\n  url: 'https://api.demoblaze.com/entries'\n}).then(res => {\n  expect(res.status).to.eq(200);\n  expect(res.body.Items[0]).has.property('cat', 'phone');\n});",
+              "err": {},
+              "uuid": "8fc87e0a-5661-4477-8377-9dd475e9b810",
+              "parentUUID": "448af141-e2cd-4b97-899f-f8be96ea1c08",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8fc87e0a-5661-4477-8377-9dd475e9b810"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 239,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5a9f4620-a118-4da2-b591-5f315dfd1c57",
+      "title": "",
+      "fullFile": "cypress/integration/api-tests/POST-signup-login-tests.spec.js",
+      "file": "cypress/integration/api-tests/POST-signup-login-tests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b0572372-2125-4b60-a704-b89ff207dd47",
+          "title": "test suite to validate that a new user can be created",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should sign up a user",
+              "fullTitle": "test suite to validate that a new user can be created it should sign up a user",
+              "timedOut": null,
+              "duration": 203,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: ' https://api.demoblaze.com/signup',\n  body: {\n    'password': _constants.CREDENTIALS.password,\n    'username': username\n  }\n}).then(res => {\n  expect(res.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "57a3b817-774c-4ba1-af3b-961fec8163f1",
+              "parentUUID": "b0572372-2125-4b60-a704-b89ff207dd47",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "it should login with the signup user in the previous test",
+              "fullTitle": "test suite to validate that a new user can be created it should login with the signup user in the previous test",
+              "timedOut": null,
+              "duration": 258,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://api.demoblaze.com/login',\n  body: {\n    'password': _constants.CREDENTIALS.password,\n    'username': username\n  }\n}).then(res => {\n  expect(res.status).to.eq(200);\n});",
+              "err": {},
+              "uuid": "22209d57-3c42-4001-aa29-7073ffaf0680",
+              "parentUUID": "b0572372-2125-4b60-a704-b89ff207dd47",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "57a3b817-774c-4ba1-af3b-961fec8163f1",
+            "22209d57-3c42-4001-aa29-7073ffaf0680"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 461,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ee23b9ae-a52d-4b64-bedd-23b171ef43d6",
+      "title": "",
+      "fullFile": "cypress/integration/regression/aboutus-test.spec.js",
+      "file": "cypress/integration/regression/aboutus-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9f4019c2-cc9a-4fee-ab2d-919f14978089",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should go to about us popup",
+              "fullTitle": "test suite for demoblaze site it should go to about us popup",
+              "timedOut": null,
+              "duration": 2744,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickAboutusLink();\n_aboutusPopup.default.getTitle().should('have.text', \"About us\");",
+              "err": {},
+              "uuid": "488733ec-d00d-44a9-b334-52de49ac25fa",
+              "parentUUID": "9f4019c2-cc9a-4fee-ab2d-919f14978089",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "488733ec-d00d-44a9-b334-52de49ac25fa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2744,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cccffdd6-6381-4b03-b9ac-a76fcb28a428",
+      "title": "",
+      "fullFile": "cypress/integration/regression/add-to-cart-test.spec.js",
+      "file": "cypress/integration/regression/add-to-cart-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a115809d-889d-413f-b327-b9dd48f522ff",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should add samsung galaxy s6 to cart",
+              "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
+              "timedOut": null,
+              "duration": 1893,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_landingPage.default.clickPhoneLink();\n_PhonesPage.default.clickItemByName('Samsung galaxy s6');\n_itemPage.default.clickAddToCartButton();\n_header.default.clickCartLink();\n_cartPage.default.verifyItemTitle('Samsung galaxy s6');",
+              "err": {},
+              "uuid": "80b0ea73-2d2c-4658-8b83-bc8ead57929c",
+              "parentUUID": "a115809d-889d-413f-b327-b9dd48f522ff",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "80b0ea73-2d2c-4658-8b83-bc8ead57929c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1893,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "124ada93-9e14-4309-a403-adf5c82db856",
+      "title": "",
+      "fullFile": "cypress/integration/regression/carousel-test.spec.js",
+      "file": "cypress/integration/regression/carousel-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "12499bc9-0e75-49e6-9ac3-cf201779ff75",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should have carousel and arrows on landing page",
+              "fullTitle": "test suite for demoblaze site it should have carousel and arrows on landing page",
+              "timedOut": null,
+              "duration": 608,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_landingPage.default.verifyCarousel();\n_landingPage.default.verifyNextArrow();\n_landingPage.default.verifyPreviousArrow();",
+              "err": {},
+              "uuid": "c6609d24-2532-46d3-a73a-0a8a3f4c9da6",
+              "parentUUID": "12499bc9-0e75-49e6-9ac3-cf201779ff75",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6609d24-2532-46d3-a73a-0a8a3f4c9da6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 608,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "12b11060-0618-4631-b619-1fafe08ed851",
+      "title": "",
+      "fullFile": "cypress/integration/regression/contact-test.spec.js",
+      "file": "cypress/integration/regression/contact-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d18a65bd-f02d-4e0e-82c1-f5cd4a5338c7",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should send a message to demoblaze",
+              "fullTitle": "test suite for demoblaze site it should send a message to demoblaze",
+              "timedOut": null,
+              "duration": 15901,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickContactLink();\n_contactusPopup.default.enterEmail('signa@mail.com');\n_contactusPopup.default.enterName('ziad harb');\n_contactusPopup.default.enterMessage('testing');\n_contactusPopup.default.clickSendMessage();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Thanks for the message!!');\n});",
+              "err": {},
+              "uuid": "2eaf4401-34c1-4c28-ac9a-e26aa9676c09",
+              "parentUUID": "d18a65bd-f02d-4e0e-82c1-f5cd4a5338c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2eaf4401-34c1-4c28-ac9a-e26aa9676c09"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15901,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "178dfcb4-a54f-4863-88d0-cff87c5293c4",
+      "title": "",
+      "fullFile": "cypress/integration/regression/login-test.spec.js",
+      "file": "cypress/integration/regression/login-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2d6dc696-2d40-49e3-972f-c73d3ff682b5",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should add samsung galaxy s6 to cart",
+              "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
+              "timedOut": null,
+              "duration": 6567,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickSignupLink();\n_signupPopup.default.fillUsernameBox(username);\n_signupPopup.default.fillPasswordBox(password);\n_signupPopup.default.clickSignupButton();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Sign up successful.');\n});\ncy.on('window:confirm', () => true);\n_header.default.clickLoginLink();\n_loginPopup.default.fillUsernameBox(username);\n_loginPopup.default.fillPasswordBox(password);\n_loginPopup.default.clickLoginButton();\n_header.default.verifyLoginUser(username);",
+              "err": {},
+              "uuid": "15a99024-d02c-4bef-8fde-2921d74df9f4",
+              "parentUUID": "2d6dc696-2d40-49e3-972f-c73d3ff682b5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15a99024-d02c-4bef-8fde-2921d74df9f4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6567,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7ba4762f-f735-439a-bb3e-0d722f71a1d2",
+      "title": "",
+      "fullFile": "cypress/integration/regression/main-page-logo-test.spec.js",
+      "file": "cypress/integration/regression/main-page-logo-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "82bcadc4-0ac3-42a4-ba22-be7e329c5be7",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should verify page logo href",
+              "fullTitle": "test suite for demoblaze site it should verify page logo href",
+              "timedOut": null,
+              "duration": 478,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.verifyPageLogo();",
+              "err": {},
+              "uuid": "374fcda1-1a74-43b2-b27e-f28c86aa7c27",
+              "parentUUID": "82bcadc4-0ac3-42a4-ba22-be7e329c5be7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "374fcda1-1a74-43b2-b27e-f28c86aa7c27"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 478,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f6b27c7d-b55c-4957-99be-298897a29c14",
+      "title": "",
+      "fullFile": "cypress/integration/regression/singup-test.spec.js",
+      "file": "cypress/integration/regression/singup-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "656b506c-53fd-42ba-ae2a-99497ca1a57c",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should add samsung galaxy s6 to cart",
+              "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
+              "timedOut": null,
+              "duration": 4395,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickSignupLink();\n_signupPopup.default.fillUsernameBox(_constants.CREDENTIALS.username);\n_signupPopup.default.fillPasswordBox(_constants.CREDENTIALS.password);\n_signupPopup.default.clickSignupButton();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Sign up successful.');\n});",
+              "err": {},
+              "uuid": "ac9a0571-ba77-4c93-91e4-61a4d35ce60a",
+              "parentUUID": "656b506c-53fd-42ba-ae2a-99497ca1a57c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac9a0571-ba77-4c93-91e4-61a4d35ce60a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4395,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

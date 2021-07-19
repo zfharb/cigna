@@ -2,9 +2,7 @@ import Page from './page';
 
 const SELECTORS = {
     USERNAME_BOX: '#sign-username',
-
     PASSWORD_BOX: "#sign-password",
-
     SIGNUP_BUTTON: "Sign up"
 };
 

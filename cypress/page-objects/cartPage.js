@@ -12,9 +12,7 @@ class CartPage extends Page {
 
     verifyItemTitle(itemTitle) {
         cy.get(SELECTORS.CART_TABLE,{force: 'true'} ,{ timeout: 10000 }).contains(itemTitle).should('have.text', itemTitle);
-        
     }
-
 }
 
 export default new CartPage();

@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-19T00:47:20.519Z",
+    "end": "2021-07-19T00:47:25.727Z",
+    "duration": 5208,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f6b27c7d-b55c-4957-99be-298897a29c14",
+      "title": "",
+      "fullFile": "cypress/integration/regression/singup-test.spec.js",
+      "file": "cypress/integration/regression/singup-test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "656b506c-53fd-42ba-ae2a-99497ca1a57c",
+          "title": "test suite for demoblaze site",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should add samsung galaxy s6 to cart",
+              "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
+              "timedOut": null,
+              "duration": 4395,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickSignupLink();\n_signupPopup.default.fillUsernameBox(_constants.CREDENTIALS.username);\n_signupPopup.default.fillPasswordBox(_constants.CREDENTIALS.password);\n_signupPopup.default.clickSignupButton();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Sign up successful.');\n});",
+              "err": {},
+              "uuid": "ac9a0571-ba77-4c93-91e4-61a4d35ce60a",
+              "parentUUID": "656b506c-53fd-42ba-ae2a-99497ca1a57c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ac9a0571-ba77-4c93-91e4-61a4d35ce60a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4395,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

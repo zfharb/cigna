@@ -7,12 +7,18 @@
     "cypress": "^7.4.0"
   },
   "devDependencies": {
-    "mocha": "^8.0.1"
+    "mocha": "^8.4.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test_error": "echo \"Error: no test specified\" && exit 1",
+    "delete:reportFolder": "rm -rf mochawesome-report/",
     "open:cypress": "./node_modules/.bin/cypress open",
-    "run:cypress": "node_modules\\.bin\\cypress run --headed --spec 'cypress/integration/**/*.spec.js'"
+    "run:cypress": "npm run delete:reportFolder && ./node_modules/.bin/cypress run --headed --spec 'cypress/integration/**/*.spec.js'",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json && open TestReport/cypress-combined-report.html"
   },
   "repository": {
     "type": "git",
