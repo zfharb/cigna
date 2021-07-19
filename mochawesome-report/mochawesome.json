@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:03.989Z",
-    "end": "2021-07-19T00:46:04.254Z",
-    "duration": 265,
+    "start": "2021-07-19T01:05:54.243Z",
+    "end": "2021-07-19T01:05:54.498Z",
+    "duration": 255,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "46fbd849-2d6e-45ed-ae02-f51012fa4625",
+      "uuid": "ae4963f3-8f68-466e-ac7a-b0bd5d9180cf",
       "title": "",
       "fullFile": "cypress/integration/api-tests/GET-view-all-items-test.spec.js",
       "file": "cypress/integration/api-tests/GET-view-all-items-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "448af141-e2cd-4b97-899f-f8be96ea1c08",
+          "uuid": "d2dfc857-61f6-474f-8fa5-ab1eb589b2ae",
           "title": "test suite to validate that all items can be viewed",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should get all items",
               "fullTitle": "test suite to validate that all items can be viewed it should get all items",
               "timedOut": null,
-              "duration": 239,
+              "duration": 237,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request({\n  method: 'get',\n  url: 'https://api.demoblaze.com/entries'\n}).then(res => {\n  expect(res.status).to.eq(200);\n  expect(res.body.Items[0]).has.property('cat', 'phone');\n});",
               "err": {},
-              "uuid": "8fc87e0a-5661-4477-8377-9dd475e9b810",
-              "parentUUID": "448af141-e2cd-4b97-899f-f8be96ea1c08",
+              "uuid": "b59f6fd1-2912-40a6-b078-77e1219f28fe",
+              "parentUUID": "d2dfc857-61f6-474f-8fa5-ab1eb589b2ae",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "8fc87e0a-5661-4477-8377-9dd475e9b810"
+            "b59f6fd1-2912-40a6-b078-77e1219f28fe"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 239,
+          "duration": 237,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

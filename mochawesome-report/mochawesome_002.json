@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:13.214Z",
-    "end": "2021-07-19T00:46:17.019Z",
-    "duration": 3805,
+    "start": "2021-07-19T01:06:03.475Z",
+    "end": "2021-07-19T01:06:07.215Z",
+    "duration": 3740,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ee23b9ae-a52d-4b64-bedd-23b171ef43d6",
+      "uuid": "6ef377fd-14f5-4ab1-a1a9-5dd2f07be223",
       "title": "",
       "fullFile": "cypress/integration/regression/aboutus-test.spec.js",
       "file": "cypress/integration/regression/aboutus-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f4019c2-cc9a-4fee-ab2d-919f14978089",
+          "uuid": "f0e87d5c-5c54-45c3-99d3-4109cfa66a97",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should go to about us popup",
               "fullTitle": "test suite for demoblaze site it should go to about us popup",
               "timedOut": null,
-              "duration": 2744,
+              "duration": 2771,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickAboutusLink();\n_aboutusPopup.default.getTitle().should('have.text', \"About us\");",
               "err": {},
-              "uuid": "488733ec-d00d-44a9-b334-52de49ac25fa",
-              "parentUUID": "9f4019c2-cc9a-4fee-ab2d-919f14978089",
+              "uuid": "9f12d715-8cca-4030-85a1-f06641f16995",
+              "parentUUID": "f0e87d5c-5c54-45c3-99d3-4109cfa66a97",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "488733ec-d00d-44a9-b334-52de49ac25fa"
+            "9f12d715-8cca-4030-85a1-f06641f16995"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2744,
+          "duration": 2771,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

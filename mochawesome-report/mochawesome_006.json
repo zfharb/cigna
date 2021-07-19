@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:47:01.236Z",
-    "end": "2021-07-19T00:47:08.713Z",
-    "duration": 7477,
+    "start": "2021-07-19T01:06:52.019Z",
+    "end": "2021-07-19T01:06:59.162Z",
+    "duration": 7143,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "178dfcb4-a54f-4863-88d0-cff87c5293c4",
+      "uuid": "702f2d49-355b-432d-9e45-05066e75a721",
       "title": "",
       "fullFile": "cypress/integration/regression/login-test.spec.js",
       "file": "cypress/integration/regression/login-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "2d6dc696-2d40-49e3-972f-c73d3ff682b5",
+          "uuid": "95e5cf43-4f33-4b55-baf5-b82f733d9754",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should add samsung galaxy s6 to cart",
               "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
               "timedOut": null,
-              "duration": 6567,
+              "duration": 6161,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickSignupLink();\n_signupPopup.default.fillUsernameBox(username);\n_signupPopup.default.fillPasswordBox(password);\n_signupPopup.default.clickSignupButton();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Sign up successful.');\n});\ncy.on('window:confirm', () => true);\n_header.default.clickLoginLink();\n_loginPopup.default.fillUsernameBox(username);\n_loginPopup.default.fillPasswordBox(password);\n_loginPopup.default.clickLoginButton();\n_header.default.verifyLoginUser(username);",
               "err": {},
-              "uuid": "15a99024-d02c-4bef-8fde-2921d74df9f4",
-              "parentUUID": "2d6dc696-2d40-49e3-972f-c73d3ff682b5",
+              "uuid": "9f24765a-05f2-468e-be0d-d3026a88dbc3",
+              "parentUUID": "95e5cf43-4f33-4b55-baf5-b82f733d9754",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "15a99024-d02c-4bef-8fde-2921d74df9f4"
+            "9f24765a-05f2-468e-be0d-d3026a88dbc3"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6567,
+          "duration": 6161,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

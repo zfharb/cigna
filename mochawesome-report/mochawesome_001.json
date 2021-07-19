@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:08.573Z",
-    "end": "2021-07-19T00:46:09.051Z",
-    "duration": 478,
+    "start": "2021-07-19T01:05:58.907Z",
+    "end": "2021-07-19T01:05:59.377Z",
+    "duration": 470,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5a9f4620-a118-4da2-b591-5f315dfd1c57",
+      "uuid": "413645e3-4b77-41a1-8b92-bfa361eab700",
       "title": "",
       "fullFile": "cypress/integration/api-tests/POST-signup-login-tests.spec.js",
       "file": "cypress/integration/api-tests/POST-signup-login-tests.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b0572372-2125-4b60-a704-b89ff207dd47",
+          "uuid": "3d03dd60-0e66-404e-a767-84078ac1e17f",
           "title": "test suite to validate that a new user can be created",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should sign up a user",
               "fullTitle": "test suite to validate that a new user can be created it should sign up a user",
               "timedOut": null,
-              "duration": 203,
+              "duration": 231,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.request({\n  method: 'POST',\n  url: ' https://api.demoblaze.com/signup',\n  body: {\n    'password': _constants.CREDENTIALS.password,\n    'username': username\n  }\n}).then(res => {\n  expect(res.status).to.eq(200);\n});",
               "err": {},
-              "uuid": "57a3b817-774c-4ba1-af3b-961fec8163f1",
-              "parentUUID": "b0572372-2125-4b60-a704-b89ff207dd47",
+              "uuid": "1524682e-a7c0-444d-8a1b-3d0b52b1a5f2",
+              "parentUUID": "3d03dd60-0e66-404e-a767-84078ac1e17f",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "it should login with the signup user in the previous test",
               "fullTitle": "test suite to validate that a new user can be created it should login with the signup user in the previous test",
               "timedOut": null,
-              "duration": 258,
+              "duration": 196,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.request({\n  method: 'POST',\n  url: 'https://api.demoblaze.com/login',\n  body: {\n    'password': _constants.CREDENTIALS.password,\n    'username': username\n  }\n}).then(res => {\n  expect(res.status).to.eq(200);\n});",
               "err": {},
-              "uuid": "22209d57-3c42-4001-aa29-7073ffaf0680",
-              "parentUUID": "b0572372-2125-4b60-a704-b89ff207dd47",
+              "uuid": "14d4f6ca-a817-4a5a-9de4-4898a51dd25c",
+              "parentUUID": "3d03dd60-0e66-404e-a767-84078ac1e17f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "57a3b817-774c-4ba1-af3b-961fec8163f1",
-            "22209d57-3c42-4001-aa29-7073ffaf0680"
+            "1524682e-a7c0-444d-8a1b-3d0b52b1a5f2",
+            "14d4f6ca-a817-4a5a-9de4-4898a51dd25c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 461,
+          "duration": 427,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

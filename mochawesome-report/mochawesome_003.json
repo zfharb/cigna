@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:22.177Z",
-    "end": "2021-07-19T00:46:24.983Z",
-    "duration": 2806,
+    "start": "2021-07-19T01:06:12.362Z",
+    "end": "2021-07-19T01:06:15.532Z",
+    "duration": 3170,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "cccffdd6-6381-4b03-b9ac-a76fcb28a428",
+      "uuid": "0a1d419a-1b8c-4788-adc0-f3f0e408c9c8",
       "title": "",
       "fullFile": "cypress/integration/regression/add-to-cart-test.spec.js",
       "file": "cypress/integration/regression/add-to-cart-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a115809d-889d-413f-b327-b9dd48f522ff",
+          "uuid": "5bbfa845-f4fb-4f0c-92ef-14486f6fb139",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should add samsung galaxy s6 to cart",
               "fullTitle": "test suite for demoblaze site it should add samsung galaxy s6 to cart",
               "timedOut": null,
-              "duration": 1893,
+              "duration": 2297,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_landingPage.default.clickPhoneLink();\n_PhonesPage.default.clickItemByName('Samsung galaxy s6');\n_itemPage.default.clickAddToCartButton();\n_header.default.clickCartLink();\n_cartPage.default.verifyItemTitle('Samsung galaxy s6');",
               "err": {},
-              "uuid": "80b0ea73-2d2c-4658-8b83-bc8ead57929c",
-              "parentUUID": "a115809d-889d-413f-b327-b9dd48f522ff",
+              "uuid": "17fd22f5-761b-446e-a183-bc6c8bc4c2b9",
+              "parentUUID": "5bbfa845-f4fb-4f0c-92ef-14486f6fb139",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "80b0ea73-2d2c-4658-8b83-bc8ead57929c"
+            "17fd22f5-761b-446e-a183-bc6c8bc4c2b9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1893,
+          "duration": 2297,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

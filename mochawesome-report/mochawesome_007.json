@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:47:14.650Z",
-    "end": "2021-07-19T00:47:15.990Z",
-    "duration": 1340,
+    "start": "2021-07-19T01:07:05.178Z",
+    "end": "2021-07-19T01:07:06.577Z",
+    "duration": 1399,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7ba4762f-f735-439a-bb3e-0d722f71a1d2",
+      "uuid": "a741e45d-16c8-4300-b981-bc840d66c9ba",
       "title": "",
       "fullFile": "cypress/integration/regression/main-page-logo-test.spec.js",
       "file": "cypress/integration/regression/main-page-logo-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "82bcadc4-0ac3-42a4-ba22-be7e329c5be7",
+          "uuid": "3f9ed592-8df5-414b-a988-baba11ed1835",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should verify page logo href",
               "fullTitle": "test suite for demoblaze site it should verify page logo href",
               "timedOut": null,
-              "duration": 478,
+              "duration": 536,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_header.default.verifyPageLogo();",
               "err": {},
-              "uuid": "374fcda1-1a74-43b2-b27e-f28c86aa7c27",
-              "parentUUID": "82bcadc4-0ac3-42a4-ba22-be7e329c5be7",
+              "uuid": "a5dc8a42-54bb-4ba8-8bde-c7c6269b0ce7",
+              "parentUUID": "3f9ed592-8df5-414b-a988-baba11ed1835",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "374fcda1-1a74-43b2-b27e-f28c86aa7c27"
+            "a5dc8a42-54bb-4ba8-8bde-c7c6269b0ce7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 478,
+          "duration": 536,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

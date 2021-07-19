@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:29.763Z",
-    "end": "2021-07-19T00:46:31.331Z",
-    "duration": 1568,
+    "start": "2021-07-19T01:06:20.563Z",
+    "end": "2021-07-19T01:06:22.036Z",
+    "duration": 1473,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "124ada93-9e14-4309-a403-adf5c82db856",
+      "uuid": "51751c95-806a-4fdd-91ba-eb1256b5a7d4",
       "title": "",
       "fullFile": "cypress/integration/regression/carousel-test.spec.js",
       "file": "cypress/integration/regression/carousel-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "12499bc9-0e75-49e6-9ac3-cf201779ff75",
+          "uuid": "aea4f08a-10fd-4011-8cc2-e8ae1054c36e",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should have carousel and arrows on landing page",
               "fullTitle": "test suite for demoblaze site it should have carousel and arrows on landing page",
               "timedOut": null,
-              "duration": 608,
+              "duration": 553,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_landingPage.default.verifyCarousel();\n_landingPage.default.verifyNextArrow();\n_landingPage.default.verifyPreviousArrow();",
               "err": {},
-              "uuid": "c6609d24-2532-46d3-a73a-0a8a3f4c9da6",
-              "parentUUID": "12499bc9-0e75-49e6-9ac3-cf201779ff75",
+              "uuid": "f192e0c5-fbea-492b-9df5-0a0859df20b2",
+              "parentUUID": "aea4f08a-10fd-4011-8cc2-e8ae1054c36e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c6609d24-2532-46d3-a73a-0a8a3f4c9da6"
+            "f192e0c5-fbea-492b-9df5-0a0859df20b2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 608,
+          "duration": 553,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

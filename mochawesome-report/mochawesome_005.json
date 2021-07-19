@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-19T00:46:36.041Z",
-    "end": "2021-07-19T00:46:52.886Z",
-    "duration": 16845,
+    "start": "2021-07-19T01:06:26.663Z",
+    "end": "2021-07-19T01:06:43.567Z",
+    "duration": 16904,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "12b11060-0618-4631-b619-1fafe08ed851",
+      "uuid": "3f2db456-53e3-44b7-8f8a-225bc32fe9c9",
       "title": "",
       "fullFile": "cypress/integration/regression/contact-test.spec.js",
       "file": "cypress/integration/regression/contact-test.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d18a65bd-f02d-4e0e-82c1-f5cd4a5338c7",
+          "uuid": "85e58894-472e-43e6-8a80-80c328bec1ad",
           "title": "test suite for demoblaze site",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "it should send a message to demoblaze",
               "fullTitle": "test suite for demoblaze site it should send a message to demoblaze",
               "timedOut": null,
-              "duration": 15901,
+              "duration": 16044,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "(0, _testBase.visitBaseURL)();\n_header.default.clickContactLink();\n_contactusPopup.default.enterEmail('signa@mail.com');\n_contactusPopup.default.enterName('ziad harb');\n_contactusPopup.default.enterMessage('testing');\n_contactusPopup.default.clickSendMessage();\ncy.on('window:alert', str => {\n  expect(str).to.equal('Thanks for the message!!');\n});",
               "err": {},
-              "uuid": "2eaf4401-34c1-4c28-ac9a-e26aa9676c09",
-              "parentUUID": "d18a65bd-f02d-4e0e-82c1-f5cd4a5338c7",
+              "uuid": "c30dcbab-9910-4f83-94ac-a8fd54862255",
+              "parentUUID": "85e58894-472e-43e6-8a80-80c328bec1ad",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2eaf4401-34c1-4c28-ac9a-e26aa9676c09"
+            "c30dcbab-9910-4f83-94ac-a8fd54862255"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15901,
+          "duration": 16044,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
